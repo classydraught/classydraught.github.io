@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+}
+
+.card {
+  box-shadow: 0px 20px 20px rgb(0, 0, 0, 0.2), 0px 0px 50px rgb(0, 0, 0, 0.2);
+  padding: 0rem 2rem 2rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1000;
+}
+
+.card > * {
+  padding-top: 2rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pic {
+  background-image: url("./profile.jpg");
+  background-position: top;
+  background-size: cover;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+h1,
+h3 {
+  color: #484848;
+}
+
+.profile-circle {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: linear-gradient(44.53deg, #25efcb 0%, #12c0f7 94.54%);
+  opacity: 0.8;
+  position: absolute;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  flex-basis: 300px;
+  padding-left: 2rem;
+}
+
+.skills {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.skill {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 400;
+  font-weight: 500;
+  background-color: #fff;
+  color: #484848;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  margin: 2px 4px 2px 0px;
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.skill:hover {
+  background-color: #484848;
+  color: #bdf3ff;
+}
+
+.contact-section {
+  display: flex;
+  padding-top: 1.5rem;
+  justify-content: space-between;
+}
+
+.contact-section > * {
+  font-size: 20px;
+}
+
+.fab.fa-facebook {
+  color: #4c6ef5;
+}
+.fas.fa-at {
+  color: #e6330e;
+}
+.fab.fa-stack-overflow {
+  color: #ff8c00;
+}
+.fab.fa-linkedin-in {
+  color: #00a5ec;
+}
+.fab.fa-medium {
+  color: #212121;
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .card {
+    max-width: 350px;
+  }
+  .info {
+    padding-left: 0;
+  }
+}
